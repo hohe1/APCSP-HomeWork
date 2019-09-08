@@ -1,3 +1,8 @@
+#PQEx{
+    display:none;
+    }
+
+
 #topDiv{
     border:0px;
     width: 100%;
@@ -62,14 +67,60 @@
     height: 100%;
     background-color:rgba(255, 255, 255, 0.5);
     box-sizing:border-box;
-    
-}
-    
-.questions{
-     display:flex;
+    display:flex;
     flex-wrap:wrap;
     
     }
+    
+.Pquestion{
+    border:darkgrey double 3px;
+    width:125px;
+    height:125px;
+    background:lightgray;
+    box-sizing:border-box;
+    display:flex;
+    flex-wrap:wrap;
+    }
+
+#midCenterDiv .Pquestion p{
+    margin-top:5%;
+    font-size:190%;
+    }
+
+.QuestionAnswer ,.AppendedQandA{
+    display:flex;
+    /*flex-wrap:wrap;*/
+    }
+
+.questionAnswerTxtContainer{
+    /*border:red 1px solid;*/
+    font-size:125%;
+    color:#006CFF;
+    text-shadow:2px 2px 10px black;
+    /*height:50%;*/
+    width:100%;
+    }
+
+.questionTxt{
+    
+    }
+
+.answerTxt{
+    color:#007BD1;
+    text-shadow:1px 1px 5px azure;
+    display:flex;
+
+    flex-wrap:wrap;
+    }
+    /*----------------------------------------*/
+#howToOperate{
+    text-align:center;
+    border:white 2px double;
+    width:100%;
+    }    
+    
+    
+    
     /*----------------------------------------*/
 #midRightDiv{
     border: grey 1px solid;
@@ -91,8 +142,8 @@ body{
     flex-wrap:wrap;
     background-image:url('https://via.placeholder.com/350x150');
     }
-    
-.buttonL{
+
+.buttonL ,#hideAll{
     width:90%;
     height:50px;
     margin:auto;
@@ -105,7 +156,7 @@ body{
 
     }
     
-.buttonL:hover{
+.buttonL:hover ,#hideAll:hover{
     animation-name: hoverBoxShadow;
     animation-duration: 0.5s;
     box-shadow:2px 2px 15px  #FF5959;

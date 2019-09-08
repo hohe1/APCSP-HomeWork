@@ -10,31 +10,49 @@
 
 </head>
 <body>
-
     <div id="topDiv">
         <div><h1>APCSP Homework Portfolio</h1></div>
     </div>
 
     <div id="midDiv">
         <div id="midLeftDiv" class="midDivDiv">
-            <div id="midLeftTitle"><div>Chapter</div></div>
-            <button class="buttonL">PQ 2.02</button>
-            <button class="buttonL">PQ 2.03</button>
-            <button class="buttonL">PQ 2.04</button>
+            <div id="midLeftTitle"><div>Chapters</div></div>
+            <button id="hideAll">...</button>
+            <button class="buttonL" id="pq202">PQ 2.02</button>
+            <button class="buttonL" id="pq203">PQ 2.03</button>
+            <button class="buttonL" id="pq204">PQ 2.04</button>
 
         </div>
         <!-------------------------------------->
         <div id="midCenterDiv" class="midDivDiv">
+        
+            <div class="QuestionAnswer" id="PQEx">
+                <!--<div class="Pquestion">-->
+                <!--    <p>Question:</p>-->
+                <!--</div>-->
+                <div class="questionAnswerTxtContainer">
+                    <p class="questionTxt">question</p>
+                    <p class="answerTxt">answer.</p>
+                </div>
+            </div>
+            
+            <div id="howToOperate">
+                <h1>What is this?</h1>
+                <p>click on the buttons below "Chapters" on the left to view questions and answers.</p>
+            </div>
+            
             
         </div>
         <!-------------------------------------->
         <div id="midRightDiv" class="midDivDiv">
-            <div id="midRightTitle"></div>
+            <div id="midRightTitle">
+                <p style="text-align:center;">This box is currently useless.</p>
+            </div>
         </div>
     </div>
 
 
-<!-- jQuery -->
+<!-- jQuery --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- <script src="js/script.js"></script> -->
 <script src="script.js"></script>

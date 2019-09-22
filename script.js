@@ -57,12 +57,28 @@ var data = {
             "(POGIL) Write an algorithm for washing a stack of 10 items that are cups and dishes mixed together, where the rule is that cups are washed in hot water and dishes in cold water. Use simple commands like hot_wash and cold_wash. You may also use the control structures IF and REPEAT n times. Identify the parts of your algorithm that are examples of Sequence, Selection and Repetition."
             ],
         Answer:[
+            `REPEAT_UNTIL gray
+            MOVE_FORWARD
+            If (CAN_MOVE(right))
+                ROTATE_RIGHT
+            If (CAN_MOVE(left))
+                ROTATE_LEFT
+            `,
+            `REPEAT 8 times
+            MOVE_FORWARD
+            If (CAN_MOVE(right))
+                ROTATE_RIGHT
+            If (CAN_MOVE(left))
+                ROTATE_LEFT`,
             "",
-            "",
-            "",
-            ""
+            `REPEAT 10 times 
+            IF Saucers 
+                Cold_wash
+            IF Dish
+                Hot_wash
+            `
             ],
-        Img:["","","",""]
+        Img:["","","images\\206_2Img.png",""]
         },
     pq207qa:{
         Question:[
@@ -70,7 +86,11 @@ var data = {
             "Describe how you designed your app's UI. What components does it use?",
             "Now that you've had some experience building apps in App Inventor, what do you think about programming. Is it a creative activity? In what ways does it allow you to express yourself?"
             ],
-        Answer:[],
+        Answer:[
+            "The sound board is really simple, it have 2 buttons(an addititonal button had been added) and plays sound when click, you can also take pictures, and it also plays sound after you took a picture. The theme is your environment, it can be the city, country side, or anywhere you want. Video link: ",
+            "This app have layout elements nested within layout elements to position the button, in the desireble spot. The UI use a lot of buttons and elements that allow the user to input/change variable, such as camera, button, switch, etc...",
+            "I think we should learn actual Java and not block coding, but then this isn't APCSA. Still I did \"wrote\" the code, so that allowed me to express my creativity."
+        ],
         Img:["","",""]
         },
     pq208qa:{
@@ -79,7 +99,11 @@ var data = {
             "Give 2-3 examples of abstractions in everyday life not identified in the lecture.",
             "Consider an example of software, a mobile application, or a web site and explain how it is an abstraction"
             ],
-        Answer:[],
+        Answer:[
+            "Abstraction, is simplify something a lot, but still have the basic concept. An example is simplifing a game AI into if statements.",
+            "Example 1: I go to school in the morning. This example left out the unimportant details of what method of transportation, the exact time I left, what I wear, etc... Another example would be studying the informations that is going to be in the exam instead of reading the whole text book.",
+            "The example is an abstraction because it is designed to do a specific thing and doesn't give you irrelevant details."
+        ],
         Img:["","",""]
         },
     pq209qa:{

@@ -2,7 +2,7 @@
     display:none;
     }
 
-.Aimg{
+.Aimg, .vdo{
     width:500px;
     height:500px;
     margin:auto;
@@ -23,7 +23,7 @@
     height:100%;
     background-color:rgba(255, 255, 255, 0.5);
     /*opacity: 0.5;*/
-    box-shadow: 5px 5px 2px;
+    box-shadow: 2px 2px 2px lightblue;
     }
     /*----------------------------------------*/   
     
@@ -142,7 +142,9 @@
 body{
     display:flex;
     flex-wrap:wrap;
-    background-image:url('https://via.placeholder.com/350x150');
+    /* background-image:url('https://via.placeholder.com/350x150'); */
+    background-image: repeating-linear-gradient(to right, lightgray ,azure,rgb(0, 164, 230));
+   
     }
 
 .buttonL ,#hideAll{
@@ -184,7 +186,6 @@ body{
 
         }
     }
-
 
 
 

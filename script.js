@@ -9,7 +9,8 @@ var data = {
         Answer:[
             "Event driven programming is adding listeners into your program to detect when the user does a certain input. In the 'I have a dream app' we used buttons.", "It is possible to have simple apps that does do much, like apps that play a sound when you open it.","We used buttons and images.","If you make a car you need something that serves as the wheel, display speed, etc. Vending machines need buttons and a display."
             ],
-        Img:["","","",""]
+        Img:["","","",""],
+        Video:["","","",""]
         },
     pq203qa:{
         Question:[
@@ -23,7 +24,8 @@ var data = {
             "The benefitical effects and harmful effects can affects society, culture and economic. For example a new song can became a new cultural sensation, some company even use social media to use make money, thus economical. The effects of social media can also effects society by starting trends. Sometimes the effects are harmful like that one time kids ate laundary pods to gain social media likes and almost died.",
             "To reduce the harm, from the pervious problems we should censor some contents and ban some users, that way undesirable effects are miniumized."
             ],
-        Img:["","images\\203_1Img.PNG","",""]
+        Img:["","images\\203_1Img.PNG","",""],
+        Video:["","","",""]
         },
     pq204qa:{
         Question:[
@@ -34,7 +36,8 @@ var data = {
             "There is an additional button and we used a layout element to put the buttons at the right places.",
             "A computatonal artifact I created is this web page."
             ],
-        Img:["","","",""]
+        Img:["","","",""],
+        Video:["","","",""]
         },   
     pq205qa:{
         Question:[
@@ -47,7 +50,8 @@ var data = {
             "Connect to companion is not actually installing the app, packing it is actually installing the app, after installing, the app will stay on the device and will not update as changes are made to the prototype in the IDE.",
             "7000000 / 8 = 875000 bytes. 7000000000 / 875000 = 8000 novels."
             ],
-        Img:["","","",""]
+        Img:["","","",""],
+        Video:["","","",""]
         },
     pq206qa:{
         Question:[
@@ -78,7 +82,8 @@ var data = {
                 Hot_wash
             `
             ],
-        Img:["","","images\\206_2Img.png",""]
+        Img:["","","images\\206_2Img.png",""],
+        Video:["","","",""]
         },
     pq207qa:{
         Question:[
@@ -87,11 +92,12 @@ var data = {
             "Now that you've had some experience building apps in App Inventor, what do you think about programming. Is it a creative activity? In what ways does it allow you to express yourself?"
             ],
         Answer:[
-            "The sound board is really simple, it have 2 buttons(an addititonal button had been added) and plays sound when click, you can also take pictures, and it also plays sound after you took a picture. The theme is your environment, it can be the city, country side, or anywhere you want. Video link: ",
+            "The sound board is really simple, it have 2 buttons(an addititonal button had been added) and plays sound when click, you can also take pictures, and it also plays sound after you took a picture. The theme is your environment, it can be the city, country side, or anywhere you want. Video:",
             "This app have layout elements nested within layout elements to position the button, in the desireble spot. The UI use a lot of buttons and elements that allow the user to input/change variable, such as camera, button, switch, etc...",
             "I think we should learn actual Java and not block coding, but then this isn't APCSA. Still I did \"wrote\" the code, so that allowed me to express my creativity."
         ],
-        Img:["","",""]
+        Img:["","",""],
+        Video:["video\\207_0.mp4","",""]
         },
     pq208qa:{
         Question:[
@@ -104,7 +110,8 @@ var data = {
             "Example 1: I go to school in the morning. This example left out the unimportant details of what method of transportation, the exact time I left, what I wear, etc... Another example would be studying the informations that is going to be in the exam instead of reading the whole text book.",
             "The example is an abstraction because it is designed to do a specific thing and doesn't give you irrelevant details."
         ],
-        Img:["","",""]
+        Img:["","",""],
+        Video:["","",""]
         },
     pq209qa:{
         Question:[
@@ -121,7 +128,8 @@ var data = {
             "",
             ""
         ],
-        Img:["","","","",""]
+        Img:["","","","",""],
+        Video:["","","","",""]
         },
     pq210qa:{
         Question:[
@@ -130,7 +138,8 @@ var data = {
             "Consider these three things: A binary digit (e.g., 1 or 0), the flip-flop circuit diagram (), and the flip-flop circuit (i.e., the physical circuit). How would you arrange them from most abstract to least abstract and what criterion would you use to determine their order?"
         ],
         Answer:[],
-        Img:["","",""]
+        Img:["","",""],
+        Video:["","","",""]
         },
     pq211qa:{
         Question:[
@@ -140,8 +149,15 @@ var data = {
             "Find and summarize a news article that talks about the positive or negative impacts of a computing innovation. Is the technology itself positive or negative? Or have people used the technology in positive and/or negative ways?"
         ],
         Answer:[],
-        Img:["","","",""]
+        Img:["","","",""],
+        Video:["","","",""]
         },
+    workUnit2qa:{
+        Question:["work.gif"],
+        Answer:[""],
+        Img:["images\\onTimeF150.gif"],
+        Video:[""]
+    },
 //Unit 2 ^^^^^^^^^^^^  
 };
 
@@ -168,13 +184,22 @@ for(var key in data){
         var childAObj = $(div).find(".answerTxt");
         $(childAObj[0]).text(data[key].Answer[i]);
         
-        var childMObj = $(div).find(".Aimg");
+        var childMObj = $(div).find(".Aimg"); //find image tag and replace the src
         if(data[key].Img[i] === ""){
             childMObj.remove();
         
         }else{
             console.log(data[key].Img[i]);
             childMObj.attr("src",data[key].Img[i]);
+        }
+
+        var childMObj = $(div).find(".vdo"); //same as above, but video.
+        if(data[key].Video[i] === ""){
+            childMObj.remove();
+        
+        }else{
+            console.log(data[key].Video[i]);
+            childMObj.attr("src",data[key].Video[i]);
         }
     }
     

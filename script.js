@@ -122,24 +122,28 @@ var data = {
             "Challenging: Convert the base-5 number 243 into decimal."
         ],
         Answer:[ 
-            "",
-            "",
-            "",
+            `2^9(1)+2^8(1)+2^7(1)+2^6(0)+2^5(1)+2^4(0)+2^3(0)+2^2(0)+2^1(1)+2^0(1) = 512+256+128+0+32+0+0+0+2+1 = 931`,
+            "517-2^9=5, 2^0(1)+2^1(0)+2^2(1) = 0010 0000 0101 ",
+            "binary have 2 digits: 0-1, octal have 8 digits 0-7, decimal have 10 digit: 0-9",
             "",
             ""
         ],
-        Img:["","","","",""],
+        Img:["","","","images\\209_3Img.png","images\\209_4Img.png"],
         Video:["","","","",""]
         },
     pq210qa:{
         Question:[
             "(POGIL) Insert a screenshot of your Logicly diagram for the Exclusive-OR circuit below.",
             "(POGIL) Consider these three things: The OR gate (i.e., the physical circuit), the Boolean OR function (as defined by its truth table), and the OR symbol. How would arrange them from most abstract to least abstract? And what criterion would you use to determine their order?",
-            "Consider these three things: A binary digit (e.g., 1 or 0), the flip-flop circuit diagram (), and the flip-flop circuit (i.e., the physical circuit). How would you arrange them from most abstract to least abstract and what criterion would you use to determine their order?"
+            "Consider these three things: A binary digit (e.g., 1 or 0), the flip-flop circuit diagram, and the flip-flop circuit (i.e., the physical circuit). How would you arrange them from most abstract to least abstract and what criterion would you use to determine their order?"
         ],
-        Answer:[],
-        Img:["","",""],
-        Video:["","","",""]
+        Answer:[
+            "",
+            "from most to least abstract: Symbol ,Boolean/Function, Physical gate. This is ordered by details and how specific it is described. For example, the symbol is merely a symbol, if you need to know the gate to understand it. the function is the same, but it have true/false making it easier to understand and less abstract. the physical gate is literally what the gate look like and how it work, therefore it's least abstract.",
+            "from most to least abstract: binary digit, circuit diagram, flip-flop circuit. Order determined by details. 1 and 0 requires some thinking to make a flip flop. The diagram show you how it works but it is still a simplified version of the actual circuit. the actual flip flop is least abstract becuase it's the actual circuit."
+        ],
+        Img:["images\\210_0Img.png","",""],
+        Video:["","",""]
         },
     pq211qa:{
         Question:[
@@ -148,7 +152,18 @@ var data = {
             "Give an example of how the digital explosion is \"neither good nor bad\" but has both positive and negative implications.",
             "Find and summarize a news article that talks about the positive or negative impacts of a computing innovation. Is the technology itself positive or negative? Or have people used the technology in positive and/or negative ways?"
         ],
-        Answer:[],
+        Answer:[
+            "A bit is 0 or 1 binary, on or off. It's all just bit because computers are chips + transistors which have only on or off 0 or 1. ",
+            "Each chip have many transisters that can represent 0 or 1 depending on the current that flow through it. Moore's states that the number of transister in chips doubles every 2 years.",
+            `The good: Less work for us humans, especially the boring Assembly line jobs, machines can do the same job many times without getting tired or making a mistake. That improves te quility of produces while lowering the production value, making products more afforable. Believe it or not this paragraph you are reading is not actually type out in Html by me. It's a javaScript function that take the parameter I gave it and append this div into the Html for me, less work for me, yay.....
+            The Bad: Machines replaces jobs, leading to a higher unemployment rate, this is especially true when there are computers that learn from humans, computers that are 'creative' and creat songs, only to then have another computer software sing that song created by a computer. Humans are not part of that process.
+            `,
+            `Link: https://www.visualcapitalist.com/how-technology-is-disrupting-the-construction-industry/
+            Title: How Technology is Disrupting the Construction Industry
+            Summary: about half of the companies in construction industry consider themselve increasingly rely on tech, using softwares and hardwares. And the companies believe they must use tech in order to stay in business.
+            That is positive for us, this means companies will be more efficient with construction. But this also may put people out of jobs as computers take over their roles. I believe the tech is use in a way to benefit the employees and others as well as it make constructions more efficient and safier for everyone.
+            `
+        ],
         Img:["","","",""],
         Video:["","","",""]
         },
@@ -163,6 +178,7 @@ var data = {
 
 $("#hideAll").click(function(){
     $(".AppendedQandA").hide();  
+    $("#watThisH1").text("What is this?");
     });
 
 
@@ -237,7 +253,7 @@ $(".buttonL").click(function(){
     $(".AppendedQandA").hide();  
     $("."+this.id+"qa").show();
 
-
+    $("#watThisH1").text("You're viewing: "+this.id);
         
     });
     

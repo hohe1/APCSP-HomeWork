@@ -172,9 +172,126 @@ var data = {
         Answer:[""],
         Img:["images\\onTimeF150.gif"],
         Video:[""]
-    },
-//Unit 2 ^^^^^^^^^^^^  
-};
+        },
+//Unit 2 ^^^^^^^^^^^^  ----------------------------------------------------------------------|
+//-------------------------------------------------------------------------------------------|
+    pq302qa:{
+        Question:[
+            "Explain the meaning of the statements shown here, both in AP CSP pseudocode and App Inventor. For example, suppose the variable X has the value 10 before the statement is executed. What value would it have after the statement is executed?",
+            "One aspect of abstraction is that it helps to reduce details to focus on what's relevant. How does the use of a variable, such as dotsize, instead of a value, such as '5', help to reduce detail and focus on what is essential in this program?"
+        ],
+        Answer:[""],
+        Img:["",""],
+        Video:["",""]
+        },
+    pq303qa:{
+        Question:[
+            "Decode this message by converting it from binary to ASCII: 1000001 1110000 1110000 0100000 1001001 1101110 1110110 1100101 1101110 1110100 1101111 1110010 0100000 1010010 1001111 1000011 1001011 1010011 0100001",
+            "Describe what it means to say that JPEG is a lossy compression technique and whether or not it affects the quality of camera pictures.",
+            "Give a specific example of a binary sequence that can represent more than one type of data -- e.g., a number, a color, a character -- and describe how to interpret its different values."
+        ],
+        Answer:[""],
+        Img:["","",""],
+        Video:["","",""]
+        },
+    pq304qa:{
+        Question:[
+            "For enhancement #5 (the "+'"If Block Exercise"'+") give a brief description of your solution to this problem. PROVIDE A SCREENSHOT OF YOUR APP"+"'S CODE -- the revised blocks -- and describe how the if/else block works to solve the problem in this case. If appropriate, include a description of any significant problems or bugs you encountered in solving this problem. App Inventor now has a Download Blocks as Image feature (right click on the white space in the blocks editor to choose) that also can be used to take a screenshot of all of your code or the Windows snipping tool can be used.",
+            "When you use the Camera component to take a picture as the Canvas background, explain why the picture goes away when the app is restarted. HINT: Think about the different hardware components we talked about in an earlier lesson and where on the device the picture is stored. What do you think could be done to prevent the picture from disappearing when the app is restarted?",
+
+        ],
+        Answer:[""],
+        Img:["",""],
+        Video:["",""]
+        },
+    pq305qa:{
+        Question:[
+            "The Wikipedia article on refactoring talks about code smell and one motivation for engaging in refactoring. What is code smell? Describe briefly two examples of "+'"code smell"'+" and how refactoring would eliminate them.",
+            "Insert a screenshot of the procedure from your app below.",
+            "What are the advantages of using procedural abstraction? Name at least 2 advantages."
+        ],
+        Answer:[""],
+        Img:["","",""],
+        Video:["","",""]
+        },  
+    pq306qa:{
+        Question:[
+            "(POGIL) Describe an algorithm for identifying the card that was flipped.",
+            "(POGIL) The card "+"trick"+" shows that it is always possible to identify the card that was flipped as long as only one card was flipped. Would it be possible always to determine if an error occurred if two cards were flipped?"
+        ],
+        Answer:[""],
+        Img:["",""],
+        Video:["",""]
+            },    
+    pq307qa:{
+        Question:[
+            "Explain how the error card trick from the Error Detection lesson uses a parity scheme. Was it an even or odd parity scheme?",
+            "What are some of the limitations of using parity bits for error detection?",
+            "Another type of error detection is a check sum. Research what a check sum is and then describe it in your own words. Can a check sum identify where an error occurs?",
+            "(Optional) Explain in your own words the difference between error detection and error correction. Describe how the error correction process used in the video above allows the computer to fix errors."
+        ],
+        Answer:[""],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+    pq308qa:{
+        Question:[
+            "How are lists used in this app? Why is a list a useful data abstraction or an abstract data type (ADT) in programming? Is it easy to add new destinations to the tour?",
+            "How do APIs simplify complex programming tasks? Pick an app that you use on your device (e.g. Twitter, Google Maps) and see whether it provides an API and some of the functions you can control with it. Describe your results below.",
+            "How is GPS used in this app? Do some research to find out how GPS works and describe it here in a couple sentences.",
+            "Insert screenshots of the enhancements that you made below and describe how they work."
+        ],
+        Answer:[""],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+    pq309qa:{
+        Question:[
+            "What does it mean to say that data is 'persistent'?",
+            "What's the difference, in terms of where data is located, for data stored in a global variable vs. data stored in a database?",
+            "Include screenshots and explanations of your enhancements."
+        ],
+        Answer:[
+            ""
+        ],
+        Img:["","","",],
+        Video:["","","",]
+        },
+    pq310qa:{
+        Question:[
+        "What is metadata? Give an example of how a piece of metadata could be used to increase the usefulness of an image or document.",
+        "What is a model?",
+        "What's the difference between a raster image and an ASCII representation of a text document?",
+        "What are filename extensions? What are they used for?",
+        "What is lossless representation? What is lossy representation? What are the trade-offs in using each representation?",
+        "What is lossless representation? What is lossy representation? What are the trade-offs in using each representation?",
+        "What would you have to do to delete a document from your computer so that it could not possibly be read by anyone else?",
+        "What is free and open source software? Provide an example.",
+        "Freeeeeeeeeeeeeeeeeeeeeeeeeeee Responseeeeeeeeeeeeeeeee",
+        "How has retouching become a controversial issue? Give an example.",
+        "Would you rather own a camera (or camera phone) with a higher number of megapixels or lower? Explain.",
+        "Other than digital images, what might be an example of a computer model? Explain your answer based on the definition of a model.",
+        "The code that implements App Inventor is open source and its impact on education is obvious. Find another example of open source software and describe its positive impact on education, business or society.",
+        ],
+        Answer:[
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+        ],
+        Img:["","","","","","","","","","","","","",],
+        Video:["","","","","","","","","","","","","",]
+        },  
+    };
 
 $("#hideAll").click(function(){
     $(".AppendedQandA").hide();  
@@ -223,16 +340,9 @@ for(var key in data){
 
 //$(".AppendedQandA").show();
 
-
-
-
-
-
-
-
-
-
-
+$("#JumpUnit3").click(function(){
+    window.location.assign("C:\\Users\\Administrator\\Desktop\\APCSP-HomeWork\\Unit3.html");
+});
 
 $(".buttonL").click(function(){
 //     var divID = this.id+"QuestionContainer";

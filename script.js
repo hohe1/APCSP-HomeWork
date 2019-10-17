@@ -180,7 +180,10 @@ var data = {
             "Explain the meaning of the statements shown here, both in AP CSP pseudocode and App Inventor. For example, suppose the variable X has the value 10 before the statement is executed. What value would it have after the statement is executed?",
             "One aspect of abstraction is that it helps to reduce details to focus on what's relevant. How does the use of a variable, such as dotsize, instead of a value, such as '5', help to reduce detail and focus on what is essential in this program?"
         ],
-        Answer:[""],
+        Answer:[
+            "You take the variable x and add 1 to it. For example, if x is 2 and you do x+1 then x will return 3.",
+            "The point isn’t the dot size, it is about drawing the dot, variable comes in here as a good place holder as you can set it to a initial value that you can easily change later down the lines."
+        ],
         Img:["",""],
         Video:["",""]
         },
@@ -190,7 +193,7 @@ var data = {
             "Describe what it means to say that JPEG is a lossy compression technique and whether or not it affects the quality of camera pictures.",
             "Give a specific example of a binary sequence that can represent more than one type of data -- e.g., a number, a color, a character -- and describe how to interpret its different values."
         ],
-        Answer:[""],
+        Answer:["APP INVENTOR ROCKS!"],
         Img:["","",""],
         Video:["","",""]
         },
@@ -341,7 +344,7 @@ for(var key in data){
 //$(".AppendedQandA").show();
 
 $("#JumpUnit3").click(function(){
-    window.location.assign("C:\\Users\\Administrator\\Desktop\\APCSP-HomeWork\\Unit3.html");
+    window.location.assign("Unit3.html");
 });
 
 $(".buttonL").click(function(){

@@ -182,7 +182,7 @@ var data = {
         ],
         Answer:[
             "You take the variable x and add 1 to it. For example, if x is 2 and you do x+1 then x will return 3.",
-            "The point isn’t the dot size, it is about drawing the dot, variable comes in here as a good place holder as you can set it to a initial value that you can easily change later down the lines."
+            "The point isn't the dot size, it is about drawing the dot, variable comes in here as a good place holder as you can set it to a initial value that you can easily change later down the lines."
         ],
         Img:["",""],
         Video:["",""]
@@ -193,7 +193,9 @@ var data = {
             "Describe what it means to say that JPEG is a lossy compression technique and whether or not it affects the quality of camera pictures.",
             "Give a specific example of a binary sequence that can represent more than one type of data -- e.g., a number, a color, a character -- and describe how to interpret its different values."
         ],
-        Answer:["APP INVENTOR ROCKS!"],
+        Answer:["APP INVENTOR ROCKS!","Lossy means some data are lost in the process of compression and will not be able to return to the original uncompressed version perfectly. This is because the pictures’ quality is slightly lowered to save space.",
+        "1000001, this represents 65 in decimal which represents the letter A in ASCII. Or you can just leave it as 65.        "
+        ],
         Img:["","",""],
         Video:["","",""]
         },
@@ -203,8 +205,9 @@ var data = {
             "When you use the Camera component to take a picture as the Canvas background, explain why the picture goes away when the app is restarted. HINT: Think about the different hardware components we talked about in an earlier lesson and where on the device the picture is stored. What do you think could be done to prevent the picture from disappearing when the app is restarted?",
 
         ],
-        Answer:[""],
-        Img:["",""],
+        Answer:["To prevent negative dot size, I simply don’t allow the user to go below 0 on the dot size slider.  But if I have to prevent negative then:",
+        "The picture is not persistent data. It is thrown out after we are done messing around with it, we didn’t save it. We could save the file/picture to the device inorder to preserve it. Perhaps even on the user’s google drive."],
+        Img:["images\\304_0.png",""],
         Video:["",""]
         },
     pq305qa:{
@@ -213,8 +216,12 @@ var data = {
             "Insert a screenshot of the procedure from your app below.",
             "What are the advantages of using procedural abstraction? Name at least 2 advantages."
         ],
-        Answer:[""],
-        Img:["","",""],
+        Answer:[
+            "Code smell is the feeling you get when you feel like you made some obscured mistakes in the code. By rearranging your code you can potentially find some mistakes that had eluded you before and thus eliminate the code smell.",
+            " ",
+            "1.People won't know how your code works, making it more secure. 2.It’s simplified making it easier to use even if others dont understanding how it works, it just works. You don’t know how I append this text here, you just know I did and that’s all it matters.            "
+        ],
+        Img:["","images\\305_1.png",""],
         Video:["","",""]
         },  
     pq306qa:{
@@ -222,8 +229,14 @@ var data = {
             "(POGIL) Describe an algorithm for identifying the card that was flipped.",
             "(POGIL) The card "+"trick"+" shows that it is always possible to identify the card that was flipped as long as only one card was flipped. Would it be possible always to determine if an error occurred if two cards were flipped?"
         ],
-        Answer:[""],
-        Img:["",""],
+        Answer:[
+            "1.Look and count the index in the columns, and see if the number of flipped cards are odd or even. 2. Determine if it’s an odd or even parity bit. 3.Look and count the index in a row, see 4.which one doesn’t match. 5.(column,row) is your flipped card.",
+            "Yes, it is possible, you will still notice something doesn’t add up. However, you won’t be able to locate the flipped cards."
+        ],
+        Img:[
+            "",
+            ""
+        ],
         Video:["",""]
             },    
     pq307qa:{
@@ -233,7 +246,12 @@ var data = {
             "Another type of error detection is a check sum. Research what a check sum is and then describe it in your own words. Can a check sum identify where an error occurs?",
             "(Optional) Explain in your own words the difference between error detection and error correction. Describe how the error correction process used in the video above allows the computer to fix errors."
         ],
-        Answer:[""],
+        Answer:[
+            "If the amount of flipped card in each column and row is odd, then it’s an odd parity, if the number of flipped cards is even then it’s even parity.            ",
+            "It’s only limited to one error, more errors cause the detection system to break down.            ",
+            "Checksum takes the data and generates a code which is then compared to source code to see if there is a mistake.",
+            "The video’s method is to instruct the computer to interpret the mistake in the correct way thus patching the mistake. Error detection is simply detecting the error, while error correction is compensating for or fixing the error."
+        ],
         Img:["","","",""],
         Video:["","","",""]
         },
@@ -244,8 +262,13 @@ var data = {
             "How is GPS used in this app? Do some research to find out how GPS works and describe it here in a couple sentences.",
             "Insert screenshots of the enhancements that you made below and describe how they work."
         ],
-        Answer:[""],
-        Img:["","","",""],
+        Answer:[
+            "List makes it easy to keep track of the locations and you don’t have to declare multiple variable when one list can do the job. Furthermore by placing list within in lists we can have almost and object and store both the name and coordinates of a place. List is useful to keep things in line and organize, thus it makes adding new destinations very easy.",
+            "API allows you to use stuff that are already built, use data that are already collected. This saves you time and energy as you do not need to acquire those data yourself. I know at least one website that uses the sound cloud API to play and embed songs in the website. Th sound cloud API allows you to search in its song database, get a song and play it.",
+            "GPS can be used in the map app to locate you. GPS works by pinging GPS satellites and have it triangulate your position and sent that data back to you.",
+            "Didn't have time to make one :(",
+        ],
+        Img:["","",""],
         Video:["","","",""]
         },
     pq309qa:{
@@ -255,9 +278,11 @@ var data = {
             "Include screenshots and explanations of your enhancements."
         ],
         Answer:[
-            ""
+            "It means the data persist after you turn off the computer, the data is stored instead of thrown away after shutting down the computer.",
+            "The global variable initiates every time you run the program, meaning whatever data store in that variable is overwritten. Storing in tiny DB allows the data to be retrieved with a ‘key’ and will not overwrite when you restart the app.",
+            "DNE :(",
         ],
-        Img:["","","",],
+        Img:["","",],
         Video:["","","",]
         },
     pq310qa:{
@@ -277,23 +302,29 @@ var data = {
         "The code that implements App Inventor is open source and its impact on education is obvious. Find another example of open source software and describe its positive impact on education, business or society.",
         ],
         Answer:[
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "Metadata are data that gove information about other data, for example, properties of a text file. It is useful because sometimes you want to organize the data files and you don’t want to read each file individually. It’s kind of like sorting a library, you are gonna want the metadata about the book instead of reading the whole book when sorting.            ",
+            "A model is the computer's representation and simulation of some sort of real-life phenomenon.             ",
+            "Raster image changes the bits into colors in RGB while ASCII changes the bits into symbols and characters. In short, one converts to text while the other converts to image.            ",
+            "Filename extensions are the. whatever at the end of filenames, it tells the computer what to do with the file and how to open it.            ",
+            "Lossless is good for preserving the original thing, however it can't compress as much and may not be useable until uncompress. Lossy compression, on the other hand, cause some data to be lost in the process, but sometimes it’s good enough and no one notice anyways.            ",
+            "Steganography is hiding a message in plain sight, for example combing the first letter of the first word to spell out a hidden message, ultimately it require a set of instruction to extract the actual message intend to be hidden within an otherwise unsuspicious message. No such activity has taken place, no steganography here either.",
+            "You will need to overwrite the disk, maybe zeroing it.",
+            "Free and open-source soft wares allow the user and community to make changes to its source codes without a fee, for example, gimp is a free open source image editor, it is similar to PS.",
+            "-----------------------------------seperation line------------------------------------------",
+            "Retouching is the digital manipulation of an image to make the subject of the image look more attractive. It became a controversial issue because it makes teens follow idols and held to impossibly high standards. They will never look as good unless they too, retouch of course.            ",
+            "More megapixels allow for a higher quality photograph as more details are captured. However, due to the higher quality, it takes more space and becomes impractical for every day uses. There comes a point when it’s just good enough.",
+            "A model in computer science is a simulation of an everyday phenomenon. For example, an image simulates what we see. Other models might include text documents like pdf, as it simulates a book or an article we are reading.",
+            "Linux operating system is a free open-source operating system, and it impacts society by offering an operating system own by the community, not companies. This means greater accessibility and more people can use computers. The VLC media player is another example, its accessibility allow it to be found in many classrooms.            ",
         ],
         Img:["","","","","","","","","","","","","",],
         Video:["","","","","","","","","","","","","",]
         },  
+    workUnit3qa:{
+        Question:["work.gif"],
+        Answer:[""],
+        Img:["images\\f2Blocked.gif"],
+        Video:[""]
+        },
     };
 
 $("#hideAll").click(function(){

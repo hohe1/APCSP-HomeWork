@@ -398,8 +398,8 @@ var data = {
         "Theoretically 50% not same as experimentally 50%.",
         "Showing an integer in the case of coin flipping is sufficient. Maybe generate a float instead of a number would be better."   
         ],
-        Img:["",""],
-        Video:["",""]
+        Img:["","",""],
+        Video:["","",""]
         },
     pq407qa:{
         Question:[
@@ -442,8 +442,8 @@ var data = {
         "Fetch is getting the commands and variables ready to be executed, execute is running the commands.",
         "Machine language is 0 and 1, and can be executed by the CPU. Assembly language is the coding language we humans use, need compiler before executing." 
         ],
-        Img:["","",""],
-        Video:["","",""]
+        Img:["","","",""],
+        Video:["","","",""]
         },
     pq410qa:{
         Question:[

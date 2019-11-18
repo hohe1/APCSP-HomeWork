@@ -325,6 +325,178 @@ var data = {
         Img:["images\\f2Blocked.gif"],
         Video:[""]
         },
+
+//Unit 3 ^^^^^^^^^^^^  ----------------------------------------------------------------------|
+//-------------------------------------------------------------------------------------------|
+
+    pq402qa:{
+        Question:[
+        "This app presents a new type of event which you haven't encountered before. What is that new event? How often is it triggered?",
+        "Consider the apps you've developed so far. Can you list all the different events your apps have responded to? What other events do you think an app can respond to? Explore some of the components in App Inventor and see what event handlers they have.",
+        "What are the advantages of writing procedures in programming? Use the procedures you wrote for this app as examples in your response."
+        ],
+        Answer:[
+        "This event is the 'sprite.touched' event, it fires when the user taps the sprite on the canvas.",
+        "Our Lights off app have buttons, sprites, and timer. So there are 3 event handlers, The app responses to the button being clicked, the sprites being clicked and when the timer fires every so often.",
+        "Writing procedures allow you to reuse codes more easily. For example, I wrote a procedure for resetting the game, I had to reset the size of sprites, reset timers, etc... and if I want to have multiple conditions for resetting the game, I would need to copy and paste the lengthy code block. But with procedures, I can just call it in 1 single block."   
+        ],
+        Img:["","",""],
+        Video:["","",""]
+        },  
+    pq403qa:{
+        Question:[
+        "Describe the purpose of each enhancement that you added to your app. Give brief descriptions of the enhancements and provide screenshots of important blocks and describe how you used them to solve certain programming problems. Include these descriptions in your write-up, below.",
+        "When the user touches an ImageSprite, both the Canvas.Touched and ImageSprite.Touched events are triggered. This is important for more complex games. For instance, suppose there are "+"good"+" and "+"bad"+" sprites in your game. If you hit one, you earn a point. If you hit the other, you lose two points. If you hit the Canvas and don't hit the ImageSprite, you lose 1 point. How would you code this?",
+        "How do you speed up the movement of the ImageSprite? What is the fastest it could move?"
+        ],
+        Answer:[
+        "I added a TNT, a bad sprite that immediately ends the game when touched.",
+        "Each sprite has its own individual touch event, so just hook up the sprites to the corresponding result when tapped. As for misses, the canvas touch handler actually has a ‘spriteAnyTouch’ component that detects if any sprite is touched. So just add an if statement.",
+        "To speed up the sprite, simply decrease the ‘interval’ property in the timer component. The fastest is probably 1 millisecond." 
+        ],
+        Img:["images\\403_0Img.png","",""],
+        Video:["","",""]
+        },
+    pq404qa:{
+        Question:[
+        "Include a screenshot of your app's face drawing, and the code involved, showing the use of a loop and a procedure. You can take a screenshot on most Android devices by pressing the power button and the volume down button and the same time and then emailing the photo from the gallery to yourself, or uploading the image to Google Drive. To practice for the Create task, describe how two of the algorithms (procedures that you wrote) in the code combine to form a bigger algorithm (the drawFace procedure).",
+        "Can you draw a triangle with this set of Logo commands? Discuss how or why not.",
+        "Discuss: If you were designing the Logo language, how would you change some of our basic commands so that it would be easy to draw a triangle and easier to draw other shapes -- i.e., what should the basic commands do that would make drawing easier.",
+        "What weaknesses do you find in using the procedures (the abstractions) we gave you -- forward, turn -- for drawing simple shapes? How would you change the definitions of these procedures to make it easier to draw shapes? Give a specific example that illustrates how a more powerful set of procedures would improve things."
+        ],
+        Answer:[
+        "I wrote algorithms to draw different parts of the face.",
+        "You can not draw a triangle using 3 lines using the logo program. There is no option to turn 60 degrees.",
+        "I would 1.) allow the user to turn x degrees. 2.) allow user to set the length of each individual lines.        ",
+        "The abstractions limited the user to draw line of the same length and turning angles to 90 degrees. I would 1.) allow the user to turn x degrees. 2.) allow user to set the length of each individual lines." 
+        ],
+        Img:["images\\404_0Img.png","","",""],
+        Video:["","","",""]
+        },  
+    pq405qa:{
+        Question:[
+        "Write an if/else statement to express the following real life situation. Mary likes ice cream and always chooses chocolate unless there is no chocolate in which case she chooses strawberry. But if there’s no strawberry either then she settles for vanilla, which, for some reason, is always available.",
+        "We didn’t need it for the loop in this lesson, but the number element in the For each number loop is a local variable whose value changes automatically on each iteration of the loop. For example, in this loop number would start at 1 and then go to 2, 3 and 4. And this value can be used in the body of the loop, as shown in this example. Given that, trace through this loop and figure out what value global sum would have when the loop finishes.",
+        "App Inventor’s random-integer block is an abstract model of randomness -- i.e., an abstraction of real randomness such as flipping a real coin. What would you say about the random-integer block if you ran the coin flipping simulation 10,000 times and the result was that it came up heads 55% of the time?        "
+        ],
+        Answer:[
+        "",
+        "5",
+        "good enough, if it's not consistantly 55%" 
+        ],
+        Img:["images\\405_0Img.png","images\\405_1Img.png",""],
+        Video:["","",""]
+        },  
+    pq406qa:{
+        Question:[
+        "(POGIL) According to your results, does App Inventor's PRNG provide a good model of randomness?",
+        "(POGIL) A friend claims that flipping a coin 100 times and finding that it comes up heads only 45% of the time shows that the coin is biased. How should you reply?",
+        "Because we are using a coin flip app, this experiment really tests only that App Inventor's random integer block generates a 1 around half the time. Is this a sufficient test for App Inventor's PRNG? What other experiments might you do to increase your confidence in App Inventor’s PRNG?"
+        ],
+        Answer:[
+        "Yes, it's good enough, PRNG random walk do eventually start repeating.",
+        "Theoretically 50% not same as experimentally 50%.",
+        "Showing an integer in the case of coin flipping is sufficient. Maybe generate a float instead of a number would be better."   
+        ],
+        Img:["",""],
+        Video:["",""]
+        },
+    pq407qa:{
+        Question:[
+        "Consider the following Dilbert cartoon? Would it be possible for a PRNG to spit out 6 NINEs in a row?",
+        "Are slot machines fair? Why or why not?",
+        "Is it possible to devise a method that would allow you to win consistently on a slot machine?"
+        ],
+        Answer:[
+        "Yes, 99999... is possible, it's the same probability as any other number in a RNG, that's the point of RNG anyway.",
+        "Slot machine are inherently bias In the owner’s favor, why on earth will you run a 50 50 slot machine.",
+        "No. It’s PRNG but in favor of the owner." 
+        ],
+        Img:["images\\407_0Img.jpg","",""],
+        Video:["","",""]
+        },  
+    pq408qa:{
+        Question:[
+        "What are the main differences between Bill Nye's solar system model and the Second Life model?",
+        "(POGIL) What would happen if there were lots more wolves than there are bunnies? Would the wolves live forever? Record your hypothesis, prediction and experiment results.",
+        "POGIL) This model chose to include certain features and exclude other features. For example, this simulation only includes rabbits, wolves, and grass but there are other predators of rabbits and other food sources for rabbits. Why do you think the creators focused on these data elements and not others? How might this introduce bias (concentration on or interest in a particular area) into the simulation?"
+        ],
+        Answer:[
+        "Bill’s model actually make sense as a scientific model regarding planet distance, while the 2nd life one is for artistic endeavors only, it’s an abstraction of Bill's model.",
+        "No, wolf would not live forever, as rabbit runs out, wolves starves to death. And I nailed it with the prediction.",
+        "The creator didn’t include the entire ecosystem because the point of the simulation is the relationship between wolf, rabbit, and grass. The other organisms may be too distracting for the user. The creator focuses on rabbit, wolf, and grass because it’s a relatively simple concept to understand. This might introduce a bias towards rabbits in this simulation because wolves don’t have interspecies competition."   
+        ],
+        Img:["","",""],
+        Video:["","",""]
+        },  
+    pq409qa:{
+        Question:[
+        "Which generation of the 4-bit simulators above is the most abstract? Why?",
+        "Explain the purpose or function of the RAM and the CPU. ",
+        "Describe in your own words the difference between the fetch and execute steps. ",
+        "Summarize the differences between assembly language and machine language programming."
+        ],
+        Answer:[
+        "I believe the newest ones are more abstract, as they make some options simpler.",
+        "RAM stores the variable and commands, CPU executes them.",
+        "Fetch is getting the commands and variables ready to be executed, execute is running the commands.",
+        "Machine language is 0 and 1, and can be executed by the CPU. Assembly language is the coding language we humans use, need compiler before executing." 
+        ],
+        Img:["","",""],
+        Video:["","",""]
+        },
+    pq410qa:{
+        Question:[
+        "Is it possible to identify someone, perhaps a patient, knowing just the gender, birth date, and zip code? Why or why not?",
+        "Are electronic documents like paper documents? Write 2-3 sentences comparing and contrasting them.",
+        "Earlier in the course, you built the Map Tour app. In the final version, what kind of data is collected from the user? Does the user know the data is being collected? Can they opt out of providing data and still use the app?",
+        "Is the Privacy Act effective? Explain why or why not.",
+        "Are you willing to trade some of your privacy for the convenience of having a computer or a company recommend products to you? Why or why not? Under what circumstances?",
+        "How do we leave digital "+"footprints and fingerprints?"+" Do you think this is important for everyone to know? Why or why not?",
+        "How have social media platforms such as Twitter, Instagram, Snapchat, etc. affected our privacy?",
+        "In this course, you are building apps that collect data from users, the device, and its sensors. What responsibilities do we have as app developers for the data we collect?",
+        "Search the web for a recent news story that deals with privacy. LINK to the article and then write a paragraph summarizing the article, including any beneficial or harmful impacts on privacy."
+        ],
+        Answer:[
+        "If you knew this information, you might have just violated HIPAA. These information allow for a patient to be identified, as it is possible to gather a list of individuals matching the descriptions, and said list is not long, making the patients easily identifiable.",
+        "Electronic documents last longer, and is sometimes immune from destruction as it is spread to a large number of anonymous individuals. Electronic documents are also less secure, it is possible, depending on the security of the system, that someone from across the world can gain access without permission. The benefit is that is can be shared across the world in just an instant.",
+        "Faces are blurred out, and so are license plates, but given enough effort I believe it is possible to identify them. They can not opt out.",
+        "Referring to ECPA 1986. It is ineffective as it is outdated.",
+        "Yes, we all had in some ways or others traded our privacy to obtain the convenience of computer. When we use google our data is collected, even if you use youtube without logging in, youtube still collect information and make recommendations accordingly. But it allows you to find more videos you might like.",
+        "We leave footprints and fingerprints when ever we put identifying information online. even if not placed publicly, since companies sell and collect data. It is likely you had already traded your information for some sort of service.",
+        "Social media make life less private as many of us decided to share many aspects of our lives online.",
+        "We need to protect provide the user with a relative amount of privacy.",
+        "I read https://medium.com/swlh/the-norms-that-undermine-online-privacy-ee117a0ff4e9; In this article the author discusses getting paid for our data that companies are collecting for free and used to monitor our habits and make recommendations, also an instance of potential HIPAA violation by google."
+        ],
+        Img:[
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ],
+        Video:[
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+    ]
+        },
+     workUnit4qa:{
+        Question:["work.gif"],
+        Answer:[""],
+        Img:["images\\f2Blocked.gif"],
+        Video:[""]
+        },
     };
 
 $("#hideAll").click(function(){
@@ -347,7 +519,7 @@ for(var key in data){
         div.className = "AppendedQandA " + String(key);
     
         var childQObj = $(div).find(".questionTxt");
-        $(childQObj[0]).text(data[key].Question[i]);
+        $(childQObj[0]).text(data[key].Question[i]); 
         var childAObj = $(div).find(".answerTxt");
         $(childAObj[0]).text(data[key].Answer[i]);
         
@@ -376,6 +548,10 @@ for(var key in data){
 
 $("#JumpUnit3").click(function(){
     window.location.assign("Unit3.html");
+});
+
+$("#JumpUnit4").click(function(){
+    window.location.assign("Unit4.html");
 });
 
 $(".buttonL").click(function(){

@@ -639,6 +639,120 @@ var data = {
             Video:["","","","","","","","","","","","",""]
             },
 
+    pq602qa:{
+        Question:[
+            "What is bandwidth? What do you think affects the differences in bandwidth globally as well as in different locations in the U.S.?",
+            "What is the latency? How does it differ from bandwidth? Why is it a useful measure?",
+            "What is the digital divide? What are some ways to reduce the effects of the digital divide?"
+            ],
+        Answer:[
+            "Bandwidth is how much data can be sent over the internet.                   ",
+            "Latency is also known as lag, a delay between sending the information to when it's received. It's different from bandwidth because bandwidth is a measurement of bits of data while latency is the measurement of time.",
+            "The division between people who have access to the internet and people without. Some ways to reduce it is by improving the living condition of more remote regions, improve the infrastructure so they are on the grid."
+            ],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+
+    pq603qa:{
+        Question:[
+            "(POGIL Activity 1) How does the geographical distance between the source and destination hosts on a network affect latency?",
+            "What are the benefits of packet switching?",
+            "(POGIL Activity 2) Missing Packets. What should happen if a packet goes missing? Who (which layer) would handle this? What action would they have to take? And what additional information would be needed in the packet in order to handle it?",
+            "(POGIL Activity 2) Security/Privacy. As the packets are being transmitted through the network, can people other than the sender and receiver read the messages? What methods can we use to protect the message?"
+            ],
+        Answer:[
+            "The data sent actually has to physically travel to said destination, so the further the destination from the host, the longer it'll take.            ",
+            "Packet switching allows for an organized way to send data over the internet. More importantly, it's decentralized nature allows the message to take alternative routes if the most optimal routes are down.",
+            "When packets are missing, the Transport layer attempt to recover it by requesting another one, if the missing packet can not be recovered, it will probably get skipped. To recover a packet the TCP would need IP header of the sender and TCP header, so it knows where the packet belongs in the message.",
+            "Yes, anyone connected to the network can intercept the message, to protect our information we use encryption.            "
+            ],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+
+    pq604qa:{
+        Question:[
+            "What is DNS and how does it work? How does DNS help you connect to a web server like Amazon?",
+            "Include a screenshot of your message log in the DNS Simulation app in Activity 1.            ",
+            "(POGIL) Discuss why and how a list variable would be a better choice for storing the recipient's multiple messages in the DNS simulation app.",
+            ],
+        Answer:[
+            "DNS is like a phone book, it looks up the IP address of a website host/server you want to visit.",
+            "",
+            "A list of a variable would allow for data structure and better organization, ie. easier to keep track of how many items are in the list, easier to add new values, etc..."
+            ],
+        Img:["","images\\604_1.png","",],
+        Video:["","","",]
+        },
+
+    pq605qa:{
+        Question:[
+            "Post a screenshot of your code for the caesarDecrypt function.",
+            "Explain the difference between a function and a procedure. Give an example of a function.    ",
+            "Explain the difference between global and local variables. Why are local variables easier to debug than global variables?"
+            ],
+        Answer:[
+            "",
+            "The function returns a value, while the procedure performs a task and doesn't return anything. An example of a function called add(), inside you add 2 values are returns it. So if you put all(1,2) the functions returns.            ",
+            "The scope is different. Global variables can be accessed from anywhere of the code while the local variables can only be accessed within its function.            "
+            ],
+        Img:["images\\605_0.png","",""],
+        Video:["","",""]
+        },
+
+    pq606qa:{
+        Question:[
+            "Explain briefly how the following substitution ciphers can be broken: Caesar cipher, Simple substitution cipher, Vigenere cipher.",
+            "Define symmetric encryption.            ",
+            ],
+        Answer:[
+            "Both Caesar and simple sub can be broken with frequency analysis. You can roughly match the frequency of the letters used in the encrypted text and the plain English language. Vigenere cipher is trickier, however, if the text is long enough, a pattern will emerge, then you can count the factor of the gap(number of letters in between each appearance), break the encrypted text into segments of that length, then brute force.            ",
+            "The key to encode and decode are the same, so the recipient and the sender need to share the key.            ",
+            ],
+        Img:["",""],
+        Video:["",""]
+        },
+
+    pq607qa:{
+        Question:[
+            "Explain in your own words how public-key encryption is not symmetric.            ",
+            "Cryptography relies on open standards - a protocol or standard that is publicly available. Why are open standards necessary?",
+            ],
+        Answer:[
+            "Open standards allow encryption to be used without infringing on someone's copyright.",
+            "Public key encryption takes advantage of a one-way function, basically a function that is easy in one direction but difficult in the reverse direction. You can then encrypt with your private key, exchange the encrypted item, then decrypted with the private key, and get the same result.            ",
+            ],
+        Img:["",""],
+        Video:["",""]
+        },
+
+    pq608qa:{
+        Question:[
+            "For each of the 5 bugs in the Caesar Cipher app, explain what the bug was, how to fix it, and the type of error (semantic or syntax). If you wish, you can take a picture of your corrected blocks and then annotate it to identify and describe the bugs you fixed.",
+            ],
+        Answer:["Bug1: a global variable PLAIN_ALPHABET is used instead of the local variable. Bug2: encrypt function returns the alphabet instead of the ciphertext. Bug3: The shift in decrypt is hardcoded to 5. Bug4: the text is displayed in the wrong text box. Bug5: returned ciphertext instead of plaintext        "],
+        Img:[""],
+        Video:[""]
+        },
+
+    pq609qa:{
+        Question:[
+            "What does it mean to say that the government would like to have a back door to the encrypted data on a mobile phone?",
+            "What are the main legal and ethical reasons for letting the government have a back door?",
+            "What are the main legal and ethical reasons against letting the government have a back door?",
+            "Do you think Apple should abide by the Court's decision and unlock the mobile phone in the San Bernardino case? Explain.",
+            ],
+        Answer:[
+            "The government wants to have a way to bypass the security measures (such as password) of people so they can get more information and less privacy for the individual.            ",
+            "The government sometimes need important information they can not access without the criminal/terrorist's password/decrypt key. The ethnical reason is to help the government protect the public.            ",
+            "The government would gain a tremendous amount of power if they can bypass our locks and gain access to our information whenever they wanted. This would allow for mass surveillance which is against the core ideal of the United States.",
+            "I think Apple did the right thing, considering the FBI already had enough information regarding the case. The addition of a back door would make it hard to be sure that our private data is private. Of course, more data would make the nation more secure but does add loads of data of normal civilians with no criminal record like you and I make FBI's job any easier processing all those data trying to find a potential terrorist?"
+            ],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+
     };
 
 $("#hideAll").click(function(){

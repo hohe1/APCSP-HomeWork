@@ -752,8 +752,149 @@ var data = {
         Img:["","","",""],
         Video:["","","",""]
         },
+//Unit 6 ^^^^^^^^^^^^  ----------------------------------------------------------------------|
+    pq702qa:{
+        Question:[
+            "Choose one of the data sets listed above in the Activity section or one that you find on your own and give a brief description of it. What specifically were the types of data (text, sounds, transactions, etc.) included in the data set you chose?",
+            "What new facts did you learn when exploring the data set? List at least 3 facts.            ",
+            "Write a question you have about the data set you chose. Now, convert that question into a hypothesis (a statement) with your prediction about the data.",
+            "Identify at least one security and/or privacy concern that is associated with the data in the data set you chose.            ",
+            "If your data set included a visualization, explain the purpose of the visualization. How would you change or improve the visualization? If it did not include a visualization, describe one that you think would be useful in understanding the data."
+            ],
+        Answer:[
+            "I picked the Air pollution in cities to visualize the dataset. The dataset is recorded per month in micrograms per cubic meter. The data is in graphs, each record data of one city. I’m focusing on the effect of wildfire in western US in 2018.",
+            "I learned that in Cities in China, October and November have significantly less pollutants from the fire, the section is blank, data may be missing. ChangChun also has above 250 microgram per cubic meter at its maximum pollution. Sao paulo have a relatively low and stable microgram per cubic meter in comparison at around 50 microgram per cubic meter.",
+            `Question: Why does China have such a high microgram per cubic meter?\n
+            Hypothesis: China has high Microgram per cubic meter?`,
+            "The data set I chose doesn’t have a privacy concern, at least not on a personal level, it's samples of air, air is not people’s private data.",
+            "The visualization included is graphs! Graphs allow for easy comparisons and any large changes are obvious. Furthermore the graph is color coded based on the microgram per cubic meter, allowing the user to make approximations of the air quality."
+            ],
+        Img:["","","","",""],
+        Video:["","","","",""]
+        },
 
-    };
+    pq703qa:{
+        Question:[
+            "(Activity 2) Write a spreadsheet formula that calculates the average elevation for the data in this spreadsheet. Write your formula and the result found in your portfolio.",
+            "(Activity 2) Are there more male or female butterflies in this data set? Include a screenshot of your chart to answer this question. What kind of data is in your chart?            ",
+            "(Activity 2) Which ecological environment (primary eco column) do these butterflies like to live in? There is no clear winner in this question so give the percentages in each ecological environment in a screenshot of your chart. What kind of data is in your chart?            ",
+            "(Activity 2) Come up with a 3rd question and use charting to answer it. Include the screenshot. What kind of data is in your chart?",
+            "(Activity 3) Include a screenshot and link of the map you created for this data.            "
+            ],
+        Answer:[
+            "=AVERAGE(J2:J88)",
+            "There are more female butterflies recorded than male.",
+            "The chart is the type of forest the sample is taken.",
+            "Do butterflies in higher elevation have wider wingspans?",
+            ""
+            ],
+        Img:["","","","","images\\702_4Img.png"],
+        Video:["","","","",""]
+        },
+
+        
+    pq704qa:{
+        Question:[
+            "Which data set did you select and why did you choose it?             ",
+            "Summarize the data included, being specific about the types of data (text, sounds, transactions, etc.) included. Make sure you list the title and the website (URL)  where you found the data.",
+            "List your 3-5 hypotheses and the data visualizations that you created for each. (Include the visualizations as images on your portfolio or provide a link to them shared with your instructor.)",
+            "Explain how collaborating with a partner helped you gain new insight or knowledge about the data.            ",
+            "Identify at least one security and/or privacy concern that is associated with the data in the data set you chose.",
+            "Screen shots:","",""
+            ],
+        Answer:[
+            "My partner and I chose the emission data set, we chose it because we wanted to investigate where the majority of the CO2 is emitted from.",
+            "The data is in the form of a google spreadsheet. The data consist of emission of several greenhouse gases by certain countries in a given year (ranges from mid 20th century to 2012 ). (link: http://think.cs.vt.edu/corgis/csv/emissions/)",
+            "Our 3 hypotheses are 1.) Has CO2 emission risen over the past 10 years? 2.)Which country emitted the most CO2 in 2012? 3.) Which sector emits most CO2 in the data set?",
+            "Collabing with a partner allows the work to be done at a much faster pace. And our different ways of thinking allow for interesting ways to organize the data.",
+            "Perhaps a country does not want to share its data? But overall I don’t see how emission of gas concerns the privacy of any individual."
+            ,"Has CO2 emission risen over the past 10 years?","Which country emitted the most CO2 in 2012?","Which sector emits most CO2 in the data set?"
+            ],
+        Img:["","","","","",
+        "images\\703_1Img.png",
+        "images\\703_2Img.png",
+        "images\\703_3Img.png"],
+        Video:["","","","","","","",""]
+        },
+
+            
+    pq705qa:{
+        Question:[
+            "How and why are files used as a data abstraction in this app? ",
+            "Explain the List of Lists data abstraction used in this app.",
+            "When and why do programmers use APIs?",
+            "Provide screenshots of your enhancement projects.", // Provide screenshots of your enhancement projects. 503 screen shot required
+            ],
+        Answer:[
+            "Files in this app is an abstraction because it's an API, one line of code instead of a whole file! more over it's store in a JSON format, making it simple for humans to read.",
+            "Each item in the list represents a state, the item it self is also a list, containing properties/types of data related to the state. This allow the app to be organized and easy to iterate with loops.",
+            "Programmers use APIs because it allow us to have up to date datasets without having to download a new version everytime.",
+            "here: (unless home wifi is down, in which case, this assignment will be turn after 3/13 8:00 AM and probably not have the screenshot)"
+            ],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+
+        
+    pq706qa:{
+        Question:[
+            ":-(",
+            ],
+        Answer:[
+            "",
+            ],
+        Img:[""],
+        Video:[""]
+        },
+
+        
+    pq707qa:{
+        Question:[
+            "In the Teachable Machine activity, what inputs were easy for the program to learn to distinguish and what inputs were more difficult?",
+            "Search online and identify another application area for AI or machine learning besides the ones described in this lesson. Is this task hard easy for humans but hard for computers to do?            ",
+            "In this lesson you saw some examples of gender bias in a machine translation program. Identify another form of unconscious bias and give an example of how it could affect a computer program. Explain how that could be a harmful effect on society, economy, or culture",
+            ],
+        Answer:[
+            "Distinguishing the difference of color is easy for the computer. Distinguishing something with similar texture is harder.            ",
+            "AI can be used to analyze big data, this task is hard for humans since big data is too much for humans to handle.",
+            "Other unconscious bias could be race, or age. It’s harmful as it could potentially enforces a stereotypes and misrepresenting culture.            ",
+            ],
+        Img:["","",""],
+        Video:["","",""]
+        },
+
+        
+    pq708qa:{
+        Question:[
+            "In your own words, define the concept of copyright. Why should all Internet users be aware of copyrighted material?",
+            "What is the difference between digital and printed documents that makes it easier to violate copyright law with digital ones?",
+            "What is a peer-to-peer architecture? Provide an example of at least one well-known peer-to-peer network.",
+            "What is the DMCA and why is it significant to copyright, especially with regards to electronic works (documents, images, videos, etc.)?",
+            "What are Open Access and Creative Commons? How have they impacted the sharing of digital information?",
+            "The Blown to Bits book is released under a Creative Commons (CC) license, specifically the Attribution-NonCommercial-ShareAlike 3.0 license. What does this license allow people other than the authors to do? What is the relationship between the original Blown to Bits book and the newer, Blown to Bits (version 2.0) book? Did the authors of the newer version stay true to the CC license? How can you tell? (Optional) If your favorite book or movie was released with a CC license, how would you change it?",
+            "The chapter describes three peer-to-peer networks, each of which can be used to share copyrighted works illegally. Why did the courts find that Napster and Grokster were liable for the illegal activities of its users, while BitTorrent is not?",
+            "What effect have streaming services such as Netflix and Spotify had on illegal downloading activities?            ",
+            "Why was it important for Jack Andraka to have access to research articles? In general, how has access to information helped to identify problems, develop solutions, and disseminate results?",
+            "What is your responsibility as an app developer in regards to the fair use of copyrighted works such as images and music? Give one example use of a copyrighted work in an app that follows fair use guidelines and one example that violates fair use guidelines.",
+            "In your opinion, are YouTube users violating copyright terms when they make lyric videos? Why or why not?"
+            ],
+        Answer:[
+            "Copyright is the government protecting someone’s idea from being stolen by someone else. Many things posted on the internet are subjected to copyright and using it without the permission of the author is infringement on copyright.             ",
+            "Digital documents can be shared more easily and anyone with internet access could potentially infringe upon the copyright            ",
+            "Peer to peer architecture is a decentralized network, client to client communication without server. An example would be Napster.",
+            "DMCA is digital millennium copyright act that gives digital work copyright protection.",
+            "Creative common allows people to have more contents to create and build with, which in turn must be released under the CC license also, starting the cycle again. Open access on the other hand allow for free access, but not redistribution or building on it. Open access is most often used on articles and research papers.",
+            "Blown to Bits 2 is released under the same license (CC) because of the share ‘alike term’. The CC license allows people to share the material in any format, and add onto the existing materials.            ",
+            "Napster and Grokster were found with secondary infringement, Naster have a central server and from the sample, the court found that Napster were mostly used for privacy activities. Grokster did not have a centralized server, but were advisterizing on their site and thus found guilty. BitTorrent does not share whole files, so it is more difficult to find them liable.",
+            "Streaming service allow more potential access to illegal downloading. However it has significantly lessened the need for privacy.",
+            "He did his research by using articles in open access and public domain, this allowed him to research a new method to detect cancer.",
+            "My responsibility is to not violate other people’s intellectual properties, I need to make sure everything is properly cited and credited. An example of following fair use guidelines is parody, like making a meme. Violation of fair use is uploading a long clip of a copyrighted music video without permission of the owners."
+            ],
+        Img:["","","",""],
+        Video:["","","",""]
+        },
+        
+}
 
 $("#hideAll").click(function(){
     $(".AppendedQandA").hide();  
@@ -813,6 +954,10 @@ $("#JumpUnit4").click(function(){
 $("#JumpUnit5").click(function(){
     window.location.assign("Unit5.html");
 });
+
+$("#changeCss").click(function(){
+    $("#cssheet").attr("href",["style.css","styleU3.css","styleU4.css","styleU5.css","styleU6.css"][Math.floor(Math.random()*5)])
+})
 
 $(".buttonL").click(function(){
 //     var divID = this.id+"QuestionContainer";

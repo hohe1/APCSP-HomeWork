@@ -889,9 +889,10 @@ var data = {
             "Streaming service allow more potential access to illegal downloading. However it has significantly lessened the need for privacy.",
             "He did his research by using articles in open access and public domain, this allowed him to research a new method to detect cancer.",
             "My responsibility is to not violate other people’s intellectual properties, I need to make sure everything is properly cited and credited. An example of following fair use guidelines is parody, like making a meme. Violation of fair use is uploading a long clip of a copyrighted music video without permission of the owners."
+            ,"Yes, just attracting lyrics to a song is not contributing anything new. It does not build upon the original work, and Youtube and the creator can put advertisements on the video, making a profit, thus violating the copyright."
             ],
-        Img:["","","",""],
-        Video:["","","",""]
+        Img:["","","","","","","","","","","",""],
+        Video:["","","","","","","","","","","",""]
         },
         
 }
